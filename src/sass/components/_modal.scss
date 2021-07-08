@@ -34,8 +34,7 @@
   transition: opacity 250ms $cubic, transform 250ms $cubic;
 
   background: getColor('primary-bg');
-  box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14,
-    0px 2px 1px $backdrop-bg;
+  box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14, 0px 2px 1px $backdrop-bg;
   border-radius: 4px;
 
   &--active {
@@ -46,10 +45,9 @@
   }
 
   &__content {
-    // Responsive height
-    height: calc(100% - $pentadeca-gap_2x);
-    padding: $deca-gap_4x;
     overflow-y: auto;
+
+    padding: $deca-gap_4x;
   }
 
   &__close {
