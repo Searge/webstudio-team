@@ -3,7 +3,7 @@
   color: getColor('ternary-text');
 
   // Desktop styles
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
 
-    @include respond-to-max('tablet') {
+    @include respond-to-max($tablet) {
       justify-content: space-between;
     }
   }

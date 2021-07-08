@@ -7,7 +7,7 @@
     margin-right: auto;
     padding: 0;
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       display: flex;
       flex-wrap: wrap;
 
@@ -18,7 +18,7 @@
       margin-right: 0;
     }
 
-    @include respond-from-min('desktop') {
+    @include respond-from-min($desktop) {
       max-width: $desktop;
 
       margin-top: 0;
@@ -34,19 +34,19 @@
     line-height: 1.18;
     text-align: center;
 
-    @include respond-to-max('tablet') {
+    @include respond-to-max($tablet) {
       &:not(:first-child) {
         margin-top: $pentadeca-gap_2x;
       }
     }
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       flex-basis: flexElementWidth($pentadeca-gap_2x, 2);
       margin-left: $pentadeca-gap_2x;
       margin-top: $pentadeca-gap_2x;
     }
 
-    @include respond-from-min('desktop') {
+    @include respond-from-min($desktop) {
       flex-basis: flexElementWidth($pentadeca-gap_2x, 4);
       margin-left: $pentadeca-gap_2x;
       margin-top: 0;

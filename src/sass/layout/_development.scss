@@ -1,7 +1,7 @@
 .development {
   display: none;
 
-  @include respond-from-min('desktop') {
+  @include respond-from-min($desktop) {
     @include centered-flex(flex);
   }
 

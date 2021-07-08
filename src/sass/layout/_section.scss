@@ -2,7 +2,7 @@
   padding: $pentadeca-gap_4x 0;
 
   // Desktop styles
-  @include respond-from-min('desktop') {
+  @include respond-from-min($desktop) {
     padding-top: $xeno-gap_g;
     padding-bottom: $xeno-gap_g;
   }
@@ -17,7 +17,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-    @include respond-from-min('desktop') {
+    @include respond-from-min($desktop) {
       margin-bottom: $deca-gap_5x;
 
       font-size: $quaternary-size;
@@ -35,14 +35,14 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     max-width: $tablet;
 
     margin-left: auto;
     margin-right: auto;
   }
 
-  @include respond-from-min('desktop') {
+  @include respond-from-min($desktop) {
     max-width: $desktop;
   }
 }

@@ -2,7 +2,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     display: flex;
     justify-content: space-between;
     margin-left: $deca-gap_9x;
@@ -13,7 +13,7 @@
   .navigation {
     display: none;
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       display: block;
     }
   }
@@ -92,24 +92,24 @@
 
   // Site Navigation Contacts Block
   &__contacts {
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       margin: $xeno-gap_b 0;
     }
-    @include respond-from-min('desktop') {
+    @include respond-from-min($desktop) {
       margin: 0;
     }
   }
 
   // Site Navigation Menu Block
   &__list {
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       display: flex;
     }
   }
 
   &__item:not(:last-child) {
     margin-bottom: $hexadeca-gap_2x;
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       margin-right: $deca-gap_5x;
       margin-bottom: 0;
     }
@@ -125,7 +125,7 @@
     font-size: $mobile-menu;
     line-height: 1.17;
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       position: relative;
       display: block;
       padding-top: $hexadeca-gap_2x;
@@ -144,7 +144,7 @@
 
   // Blue bar
   &__link--current::after {
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       position: absolute;
       left: 0;
       bottom: 0;
@@ -173,7 +173,7 @@
     border: none;
     background-color: transparent;
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       display: none;
     }
   }
