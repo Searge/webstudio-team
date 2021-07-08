@@ -4,7 +4,7 @@
 
   margin-bottom: $deca-gap_4x;
 
-  @include respond-to-max('tablet') {
+  @include respond-to-max($tablet) {
     max-width: $mobileBox;
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +14,7 @@
     }
   }
 
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     @include centered-flex();
     flex-wrap: nowrap;
     max-width: 100vw;
@@ -25,7 +25,7 @@
     }
   }
 
-  @include respond-from-min('desktop') {
+  @include respond-from-min($desktop) {
     margin-bottom: $deca-gap_5x;
   }
 

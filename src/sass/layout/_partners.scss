@@ -16,11 +16,11 @@
     flex-basis: flexElementWidth($pentadeca-gap_2x, 2);
     height: flexElementWidth($pentadeca-gap_2x, 3);
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       flex-basis: flexElementWidth($pentadeca-gap_2x, 3);
     }
 
-    @include respond-from-min('desktop') {
+    @include respond-from-min($desktop) {
       flex-basis: flexElementWidth($pentadeca-gap_2x, 6);
     }
   }

@@ -8,20 +8,19 @@
   padding-top: $pentadeca-gap_4x;
   padding-bottom: $pentadeca-gap_4x;
 
-
   &__container {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       display: flex;
       flex-wrap: wrap;
 
       justify-content: space-around;
     }
 
-    @include respond-from-min('desktop') {
+    @include respond-from-min($desktop) {
       text-align: left;
       flex-wrap: nowrap;
 
@@ -42,11 +41,11 @@
 .address {
   margin-bottom: $pentadeca-gap_4x;
 
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     margin-bottom: 0;
   }
 
-  @include respond-from-min('desktop') {
+  @include respond-from-min($desktop) {
     width: 231px;
     margin-right: $deca-gap_7x;
     margin-bottom: 0;

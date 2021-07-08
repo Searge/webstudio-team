@@ -1,9 +1,9 @@
 .join {
   margin-bottom: $pentadeca-gap_4x;
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     margin-bottom: 0;
   }
-  @include respond-from-min('desktop') {
+  @include respond-from-min($desktop) {
     width: 206px;
     margin-right: $xeno-gap_f;
   }
@@ -11,7 +11,7 @@
   &__social {
     display: flex;
 
-    @include respond-to-max('desktop') {
+    @include respond-to-max($desktop) {
       justify-content: center;
     }
   }

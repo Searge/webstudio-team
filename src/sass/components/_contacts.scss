@@ -22,7 +22,7 @@
 
   .address &__item {
     margin-top: $octa-gap;
-    @include respond-from-min('desktop') {
+    @include respond-from-min($desktop) {
       margin-top: 9px;
     }
   }
@@ -33,7 +33,7 @@
   }
 
   // Tablet Menu
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     .menu & {
       display: block;
     }
@@ -46,7 +46,7 @@
       display: flex;
       align-items: center;
 
-      @include respond-to-max('desktop') {
+      @include respond-to-max($desktop) {
         font-size: $minor-size;
         line-height: 1.16;
       }
@@ -62,7 +62,7 @@
     }
   }
   // Desktop Menu
-  @include respond-from-min('desktop') {
+  @include respond-from-min($desktop) {
     .menu & {
       display: flex;
     }

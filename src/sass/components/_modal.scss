@@ -39,7 +39,7 @@
 
   &--active {
     opacity: 1;
-    @include respond-from-min('tablet') {
+    @include respond-from-min($tablet) {
       transform: translate(-50%, -50%) scale(1);
     }
   }
@@ -89,7 +89,7 @@
   }
 
   // Desktop styles
-  @include respond-from-min('tablet') {
+  @include respond-from-min($tablet) {
     & {
       position: absolute;
       left: 50%;
