@@ -13,8 +13,6 @@ $colors-main: (
   'border-box': #eeeeee,
 );
 
-@import './functions';
-
 $colors-inverted: (
   'primary-text': getColor('primary-bg'),
 );
@@ -36,29 +34,5 @@ $colors-opacity: (
   'dark-06': 0.06,
 );
 
-$hero-gradient: getColorAlpha('ternary-bg', 'medium-dark');
-$social-bg: getColorAlpha('primary-bg', 'darker');
-$modal-form-border: getColorAlpha('secondary-text', 'dark');
-$footer-links-color: getColorAlpha('primary-bg', 'medium-light');
-$comment-placeholder: getColorAlpha('primary-text', 'medium');
-$dev-bg: getColorAlpha('ternary-bg', 'light');
-$project-accent: getColorAlpha('accent', 'lighter');
-
-// Shadows
-$backdrop-bg: getColorAlpha('ternary-text', 'dark');
-$border-medium: getColorAlpha('primary-bg', 'medium-darker');
-$shadow-border: getColorAlpha('ternary-text', 'darker');
-$shadow-button: getColorAlpha('ternary-text', 'dark-15');
-$shadow-16: getColorAlpha('ternary-text', 'dark-16');
-$shadow-14: getColorAlpha('ternary-text', 'dark-14');
-$shadow-12: getColorAlpha('ternary-text', 'dark-12');
-$shadow-08: getColorAlpha('ternary-text', 'dark-08');
-$shadow-06: getColorAlpha('ternary-text', 'dark-06');
-
 // Animation
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
-
-// Adaptive
-@import './breakpoints';
-@import './fonts';
-@import './gaps';
