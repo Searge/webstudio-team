@@ -5,7 +5,7 @@
   margin-bottom: $deca-gap_4x;
 
   @include respond-to-max('tablet') {
-    max-width: getWidth('mobileBox');
+    max-width: $mobileBox;
     margin-left: auto;
     margin-right: auto;
 
@@ -52,7 +52,6 @@
   &__btn:focus {
     background-color: getColor('accent');
     color: getColor('primary-bg');
-    box-shadow: 0px 3px 1px $shadow-border, 0px 1px 2px $shadow-08,
-      0px 2px 2px $shadow-12;
+    box-shadow: 0px 3px 1px $shadow-border, 0px 1px 2px $shadow-08, 0px 2px 2px $shadow-12;
   }
 }

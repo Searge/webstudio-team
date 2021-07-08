@@ -25,7 +25,7 @@
 .modal {
   position: relative;
 
-  max-width: getWidth('mobileBox');
+  max-width: $mobileBox;
 
   margin-left: auto;
   margin-right: auto;

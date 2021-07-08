@@ -1,4 +1,3 @@
-@import './breakpoints';
 // Colours
 @function getColor($key: 'primary-text') {
   @return map-get($colors-main, $key);
@@ -20,10 +19,10 @@
   @return rgba($color, $opacity);
 }
 
-// Get width according to breakpoint
-@function getWidth($breakpoint) {
-  @return map-get($breakpoints, $breakpoint);
-}
+// // Get width according to breakpoint
+// @function getWidth($breakpoint) {
+//   @return map-get($breakpoints, $breakpoint);
+// }
 
 // Get width of parent container
 @function flexContainerWidth($marginValue: 0, $marginsCount: 2, $elementsInRow: 0) {

@@ -2,7 +2,7 @@
   background-color: getColor('secondary-bg');
 
   &__list {
-    max-width: getWidth('mobileBox');
+    max-width: $mobileBox;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
@@ -11,7 +11,7 @@
       display: flex;
       flex-wrap: wrap;
 
-      max-width: getWidth('tablet');
+      max-width: $tablet;
 
       margin-left: negativeMargin($pentadeca-gap_2x);
       margin-top: negativeMargin($pentadeca-gap_2x);
@@ -19,7 +19,7 @@
     }
 
     @include respond-from-min('desktop') {
-      max-width: getWidth('desktop');
+      max-width: $desktop;
 
       margin-top: 0;
     }
@@ -27,8 +27,7 @@
 
   &__item {
     background-color: getColor('primary-bg');
-    box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14,
-      0px 2px 1px $backdrop-bg;
+    box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14, 0px 2px 1px $backdrop-bg;
     border-radius: 0px 0px 4px 4px;
 
     font-size: $secondary-size;

@@ -19,7 +19,7 @@
     width: 100%;
     margin-bottom: $deca-gap_2x;
     @include respond-from-min('tablet') {
-      width: getWidth('mobileBox');
+      width: $mobileBox;
     }
     @include respond-from-min('desktop') {
       width: 358px;

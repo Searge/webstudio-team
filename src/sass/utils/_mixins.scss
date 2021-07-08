@@ -9,13 +9,13 @@
 }
 
 @mixin respond-from-min($breakpoint) {
-  @media screen and (min-width: getWidth($breakpoint)) {
+  @media screen and (min-width: $breakpoint) {
     @content;
   }
 }
 
 @mixin respond-to-max($breakpoint) {
-  @media screen and (max-width: getWidth($breakpoint)) {
+  @media screen and (max-width: $breakpoint) {
     @content;
   }
 }
