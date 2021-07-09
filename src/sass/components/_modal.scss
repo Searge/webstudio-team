@@ -33,7 +33,7 @@
   opacity: 0;
   transition: opacity 250ms $cubic, transform 250ms $cubic;
 
-  background: getColor('primary-bg');
+  background: $primary-bg;
   box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14, 0px 2px 1px $backdrop-bg;
   border-radius: 4px;
 
@@ -69,12 +69,12 @@
   &__icon {
     width: 11px;
     height: 11px;
-    fill: getColor('ternary-text');
+    fill: $ternary-text;
   }
 
   &__close:hover > &__icon,
   &__close:focus > &__icon {
-    fill: getColor('accent');
+    fill: $accent;
   }
 
   &__title {
@@ -84,7 +84,7 @@
     line-height: 1.15;
     letter-spacing: 0.03em;
     text-align: center;
-    color: getColor('secondary-text');
+    color: $secondary-text;
     margin-bottom: $dodeca-gap_1x;
   }
 

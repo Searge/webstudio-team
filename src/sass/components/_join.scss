@@ -25,6 +25,6 @@
   }
 
   &__link .social__icon {
-    color: getColorInverted('primary-text');
+    color: $primary-text-inverted;
   }
 }

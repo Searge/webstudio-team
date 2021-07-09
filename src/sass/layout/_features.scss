@@ -42,7 +42,7 @@
   &__title {
     margin-top: 0;
     margin-bottom: $deca-gap_1x;
-    color: getColor('secondary-text');
+    color: $secondary-text;
     font-size: $main-size;
     line-height: 1.14;
     font-weight: 700;
@@ -66,7 +66,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: getColor('secondary-bg');
+    background-color: $secondary-bg;
     border-radius: 4px;
     margin-bottom: $pentadeca-gap_2x;
     padding: 25px 0;

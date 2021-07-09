@@ -37,8 +37,8 @@
   &__btn {
     // min-width: 73px;
     padding: $hexa-gap $xeno-gap_c;
-    background-color: getColor('secondary-bg');
-    color: getColor('secondary-text');
+    background-color: $secondary-bg;
+    color: $secondary-text;
     font-weight: 500;
     line-height: 1.62;
     text-align: center;
@@ -50,8 +50,8 @@
   &__btn--active,
   &__btn:hover,
   &__btn:focus {
-    background-color: getColor('accent');
-    color: getColor('primary-bg');
+    background-color: $accent;
+    color: $primary-bg;
     box-shadow: 0px 3px 1px $shadow-border, 0px 1px 2px $shadow-08, 0px 2px 2px $shadow-12;
   }
 }
