@@ -1,6 +1,6 @@
 .footer {
-  background-color: getColor('ternary-bg');
-  color: getColorInverted('primary-text');
+  background-color: $ternary-bg;
+  color: $primary-text-inverted;
   font-size: $main-size;
   line-height: 1.71;
   letter-spacing: 0.03em;

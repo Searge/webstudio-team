@@ -40,7 +40,7 @@
   }
 
   &__input:focus {
-    color: getColor('primary-bg');
+    color: $primary-bg;
   }
 
   &__button {
@@ -53,6 +53,6 @@
     width: 24px;
     height: 24px;
     margin-left: $deca-gap_1x;
-    fill: getColor('primary-bg');
+    fill: $primary-bg;
   }
 }

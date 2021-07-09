@@ -1,6 +1,6 @@
 body {
-  background: getColor('primary-bg');
-  color: getColor('primary-text');
+  background: $primary-bg;
+  color: $primary-text;
 
   font-family: $main-font;
   font-style: normal;
