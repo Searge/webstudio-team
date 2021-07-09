@@ -1,0 +1,110 @@
+<div class="container">
+  <div id="map"></div>
+  <div class="feedback">
+    <!-- Form -->
+    <form class="order-form">
+      <label class="order-form__label">
+        <p class="order-form__title">Имя</p>
+
+        <div class="order-form__box">
+          <input class="order-form__input" name="name" type="text" autofocus />
+          <!-- Input Icon -->
+          <svg class="order-form__input-icon">
+            <use href="./images/icons/sprites.svg#person"></use>
+          </svg>
+        </div>
+      </label>
+      <label class="order-form__label">
+        <p class="order-form__title">Телефон</p>
+
+        <div class="order-form__box">
+          <input class="order-form__input" name="phone" type="tel" />
+          <!-- Input Icon -->
+          <svg class="order-form__input-icon">
+            <use href="./images/icons/sprites.svg#phone"></use>
+          </svg>
+        </div>
+      </label>
+      <label class="order-form__label">
+        <p class="order-form__title">Почта</p>
+
+        <div class="order-form__box">
+          <input class="order-form__input" name="email" type="email" />
+          <!-- Input Icon -->
+          <svg class="order-form__input-icon">
+            <use href="./images/icons/sprites.svg#email"></use>
+          </svg>
+        </div>
+      </label>
+      <label class="order-form__textarea">
+        <p class="order-form__title">Комментарий</p>
+
+        <textarea
+          class="order-form__comment"
+          name="comment"
+          rows="8"
+          placeholder="Введите текст"
+        ></textarea>
+      </label>
+
+      <!-- Policy checkbox -->
+      <label class="order-form__policy">
+        <input class="order-form__checkbox" name="policy" type="checkbox" />
+        <span class="order-form__checkbox-icon"></span>
+        <p class="order-form__text">
+          Соглашаюсь с рассылкой и принимаю
+          <a class="order-form__link" href="./">Условия договора</a>
+        </p>
+      </label>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  var MarkerAnnotation = mapkit.MarkerAnnotation,
+    clickAnnotation;
+  var sfo = new mapkit.Coordinate(50.426648748156566, 30.538482372180507);
+
+  mapkit.init({
+    authorizationCallback: function (done) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '/services/jwt');
+      xhr.addEventListener('load', function () {
+        done(this.responseText);
+      });
+      xhr.send();
+    },
+  });
+  var map = new mapkit.Map('map');
+
+  // Setting properties on creation:
+  var sfoAnnotation = new MarkerAnnotation(sfo, {
+    color: '#f4a56d',
+    title: 'WebStudio',
+    subtitle: 'Prime Ukrainian Studio',
+    selected: 'true',
+    glyphText: '✈️',
+  });
+
+  // Add and show both annotations on the map
+  map.showItems([sfoAnnotation]);
+
+  // Drop an annotation where a Shift-click is detected:
+  map.element.addEventListener('click', function (event) {
+    if (!event.shiftKey) {
+      return;
+    }
+
+    if (clickAnnotation) {
+      map.removeAnnotation(clickAnnotation);
+    }
+
+    var coordinate = map.convertPointOnPageToCoordinate(new DOMPoint(event.pageX, event.pageY));
+    clickAnnotation = new MarkerAnnotation(coordinate, {
+      title: 'Click!',
+      color: '#c969e0',
+    });
+    map.addAnnotation(clickAnnotation);
+  });
+</script>
