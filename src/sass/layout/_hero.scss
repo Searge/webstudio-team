@@ -3,7 +3,7 @@
   background-position: 50% 50%;
   background-size: cover;
   text-align: center;
-  background-color: getColor('ternary-bg');
+  background-color: $ternary-bg;
 
   // Mobile styles
   background-image: linear-gradient(to bottom, $hero-gradient, $hero-gradient),
@@ -63,7 +63,7 @@
     margin-top: 0;
     padding: 0;
 
-    color: getColorInverted('primary-text');
+    color: $primary-text-inverted;
 
     font-size: $hero-mobile-size;
     line-height: 1.61;
