@@ -1,18 +1,18 @@
-$hero-gradient: getColorAlpha('ternary-bg', 'medium-dark');
-$social-bg: getColorAlpha('primary-bg', 'darker');
-$modal-form-border: getColorAlpha('secondary-text', 'dark');
-$footer-links-color: getColorAlpha('primary-bg', 'medium-light');
-$comment-placeholder: getColorAlpha('primary-text', 'medium');
-$dev-bg: getColorAlpha('ternary-bg', 'light');
-$project-accent: getColorAlpha('accent', 'lighter');
+$hero-gradient: rgba($ternary-bg, $medium-dark);
+$social-bg: rgba($primary-bg, $darker);
+$modal-form-border: rgba($secondary-text, $dark);
+$footer-links-color: rgba($primary-bg, $medium-light);
+$comment-placeholder: rgba($primary-text, $medium);
+$dev-bg: rgba($ternary-bg, $light);
+$project-accent: rgba($accent, $lighter);
 
 // Shadows
-$backdrop-bg: getColorAlpha('ternary-text', 'dark');
-$border-medium: getColorAlpha('primary-bg', 'medium-darker');
-$shadow-border: getColorAlpha('ternary-text', 'darker');
-$shadow-button: getColorAlpha('ternary-text', 'dark-15');
-$shadow-16: getColorAlpha('ternary-text', 'dark-16');
-$shadow-14: getColorAlpha('ternary-text', 'dark-14');
-$shadow-12: getColorAlpha('ternary-text', 'dark-12');
-$shadow-08: getColorAlpha('ternary-text', 'dark-08');
-$shadow-06: getColorAlpha('ternary-text', 'dark-06');
+$backdrop-bg: rgba($ternary-text, $dark);
+$border-medium: rgba($primary-bg, $medium-darker);
+$shadow-border: rgba($ternary-text, $darker);
+$shadow-button: rgba($ternary-text, $dark-15);
+$shadow-16: rgba($ternary-text, $dark-16);
+$shadow-14: rgba($ternary-text, $dark-14);
+$shadow-12: rgba($ternary-text, $dark-12);
+$shadow-08: rgba($ternary-text, $dark-08);
+$shadow-06: rgba($ternary-text, $dark-06);
