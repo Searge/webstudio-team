@@ -24,6 +24,39 @@
       line-height: 1.14;
     }
   }
+
+  &__navigate {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 64px;
+    height: 64px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border-color: $accent-hover;
+    background-color: $social-bg;
+    color: $primary-text-inverted;
+    transition: background-color 250ms $cubic, color 250ms $cubic;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $primary-text-inverted;
+    background-color: $accent-hover;
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 // Wrapper
@@ -45,4 +78,5 @@
   @include respond-from-min($desktop) {
     max-width: $desktop;
   }
+
 }

@@ -19,34 +19,6 @@
     <meta name="msapplication-TileColor" content="#2196f3" />
     <meta name="theme-color" content="#2196f3" />
 
-    <style>
-      .map {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        box-shadow: 0 10px 20px -15px black;
-        overflow: hidden;
-        padding: 0;
-      }
-      .map__thumb {
-        width: 500px;
-      }
-
-      .map__image {
-        width: 100%;
-        height: 100%;
-      }
-
-      .map__form {
-        background-color: #f5f4fa;
-        padding: 15px;
-        width: 400px;
-      }
-    </style>
   </head>
   <body>
     <script src="./contacts.js"></script>
@@ -55,7 +27,23 @@
 
     <!-- Main -->
     <main class="main">
-      <section class="section">
+      <section class="hero__contacts">
+        <div class="hero__container container">
+          <h1 class="hero__title">Let’s make something awesome together.</h1>
+          <h2 class="hero__description">
+            Drop us a line, or give us a heads up if you’re interested in visiting us.
+          </h2>
+          <!-- Navigate next -->
+          <div class="section__navigate">
+            <a class="section__link" href="#feedback" autofocus>
+              <svg class="section__icon">
+                <use href="./images/icons/sprites.svg#icon-chevron-down"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section feedback" id="feedback">
         <include src="./partials/contacts.html"></include>
       </section>
     </main>
