@@ -1,33 +1,57 @@
 .feedback {
-  height: 100vh;
-  padding-top: 25vh;
+  @include respond-from-min($desktop) {
+    height: 100vh;
+    padding-top: 25vh;
+  }
 }
 
 .map {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 900px;
-  height: 500px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px -15px black;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px $shadow-12, 0px 1px 1px $shadow-14, 0px 2px 1px $backdrop-bg;
   overflow: hidden;
-  padding: 0;
 
-  &__thumb {
-    width: 500px;
+  max-width: 450px;
+
+  @include respond-from-min($tablet) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    max-width: 738px;
   }
 
-  &__image {
-    width: 100%;
-    height: 100%;
+  @include respond-from-min($desktop) {
+    max-width: 900px;
+    height: 500px;
+
+    padding: 0;
+  }
+
+  &__thumb {
+    background-size: cover;
+    background-color: $ternary-bg;
+    background-position: 50% 50%;
+    background-image: url('../images/maps/Ukrainky_450.svg');
+    height: 450px;
+
+    @include respond-from-min($tablet) {
+      flex-basis: 450px;
+      height: auto;
+    }
+    @include respond-from-min($desktop) {
+      flex-basis: 500px;
+    }
   }
 
   &__form {
-    background-color: #f5f4fa;
-    padding: 15px;
-    width: 400px;
+    background-color: $secondary-bg;
+    padding: $pentadeca-gap_2x $pentadeca-gap_1x;
+
+    @include respond-from-min($desktop) {
+      flex-basis: 400px;
+      padding: $pentadeca-gap_1x;
+    }
   }
 }
