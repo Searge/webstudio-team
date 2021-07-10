@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <!-- Meta Tags -->
     <include src="./partials/meta-tags.html"></include>
-    
+
     <title>WebStudio</title>
   </head>
 
@@ -17,9 +17,9 @@
       <!-- Hero -->
       <section class="hero">
         <div class="hero__container container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Effective solutions for your business</h1>
           <!-- Order -->
-          <button class="button" data-open-modal type="button">Заказать услугу</button>
+          <button class="button" data-open-modal type="button">Order a service</button>
         </div>
 
         <div class="backdrop backdrop--is-hidden" data-backdrop>
@@ -32,12 +32,12 @@
             </button>
 
             <div class="modal__content">
-              <div class="modal__title">Оставьте свои данные, мы вам перезвоним</div>
+              <div class="modal__title">Leave your information and we'll call you back</div>
 
               <!-- Form -->
               <form class="order-form">
                 <label class="order-form__label">
-                  <p class="order-form__title">Имя</p>
+                  <p class="order-form__title">Name</p>
 
                   <div class="order-form__box">
                     <input class="order-form__input" name="name" type="text" autofocus />
@@ -48,7 +48,7 @@
                   </div>
                 </label>
                 <label class="order-form__label">
-                  <p class="order-form__title">Телефон</p>
+                  <p class="order-form__title">Phone number</p>
 
                   <div class="order-form__box">
                     <input class="order-form__input" name="phone" type="tel" />
@@ -59,7 +59,7 @@
                   </div>
                 </label>
                 <label class="order-form__label">
-                  <p class="order-form__title">Почта</p>
+                  <p class="order-form__title">Email</p>
 
                   <div class="order-form__box">
                     <input class="order-form__input" name="email" type="email" />
@@ -70,13 +70,13 @@
                   </div>
                 </label>
                 <label class="order-form__textarea">
-                  <p class="order-form__title">Комментарий</p>
+                  <p class="order-form__title">Commentary</p>
 
                   <textarea
                     class="order-form__comment"
                     name="comment"
                     rows="8"
-                    placeholder="Введите текст"
+                    placeholder="Write the message"
                   ></textarea>
                 </label>
 
@@ -85,11 +85,11 @@
                   <input class="order-form__checkbox" name="policy" type="checkbox" />
                   <span class="order-form__checkbox-icon"></span>
                   <p class="order-form__text">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a class="order-form__link" href="./">Условия договора</a>
+                    I agree and accept
+                    <a class="order-form__link" href="./">Terms of agreement</a>
                   </p>
                 </label>
-                <button class="button" type="submit">Отправить</button>
+                <button class="button" type="submit">Send</button>
               </form>
             </div>
           </div>
@@ -99,7 +99,7 @@
       <!-- Features -->
       <section class="section">
         <div class="container">
-          <h2 class="section__title hidden">Особенности</h2>
+          <h2 class="section__title hidden">Features</h2>
           <!-- Why us -->
 
           <ul class="features">
@@ -109,9 +109,10 @@
                   <use href="./images/icons/sprites.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Внимание к деталям</h3>
+              <h3 class="features__title">Attention to detail</h3>
               <p class="features__description">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ideological considerations, as well as the beginning of the daily work of shaping a
+                position.
               </p>
             </li>
 
@@ -121,9 +122,9 @@
                   <use href="./images/icons/sprites.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Пунктуальность</h3>
+              <h3 class="features__title">Punctuality</h3>
               <p class="features__description">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                The task of the organization, especially the scope and place of training entails.
               </p>
             </li>
             <li class="features__item">
@@ -132,9 +133,9 @@
                   <use href="./images/icons/sprites.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Планирование</h3>
+              <h3 class="features__title">Planning</h3>
               <p class="features__description">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Equally, consultation with a broad asset is largely responsible.
               </p>
             </li>
             <li class="features__item">
@@ -143,9 +144,10 @@
                   <use href="./images/icons/sprites.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__title">Современные технологии</h3>
+              <h3 class="features__title">Modern Technologies</h3>
               <p class="features__description">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                The importance of these problems is so obvious that the implementation of planned
+                targets.
               </p>
             </li>
           </ul>
@@ -155,7 +157,7 @@
       <!-- Development  -->
       <section class="section development">
         <div class="container">
-          <h2 class="section__title">Чем мы занимаемся</h2>
+          <h2 class="section__title">What we do</h2>
 
           <ul class="development__list">
             <li class="development__item">
@@ -186,12 +188,12 @@
                     ./images/development/coding-370@2x.jpg 2x,
                     ./images/development/coding-370@3x.jpg 3x
                   "
-                  alt="Кодинг на планшете"
+                  alt="Desktop applications"
                   loading="lazy"
                 />
               </picture>
               <div class="development__desc">
-                <p class="development__text">Десктопные приложения</p>
+                <p class="development__text">Desktop applications/p></p>
               </div>
             </li>
             <li class="development__item">
@@ -222,12 +224,12 @@
                     ./images/development/phone-370@2x.jpg 2x,
                     ./images/development/phone-370@3x.jpg 3x
                   "
-                  alt="Разработка миобильного приложения"
+                  alt="Development of mobile applications"
                   loading="lazy"
                 />
               </picture>
               <div class="development__desc">
-                <p class="development__text">Мобильные приложения</p>
+                <p class="development__text">Mobile development</p>
               </div>
             </li>
             <li class="development__item">
@@ -258,12 +260,12 @@
                     ./images/development/palette-370@2x.jpg 2x,
                     ./images/development/palette-370@3x.jpg 3x
                   "
-                  alt="Цветовая схема"
+                  alt="Color palette"
                   loading="lazy"
                 />
               </picture>
               <div class="development__desc">
-                <p class="development__text">Дизайнерские решения</p>
+                <p class="development__text">Design solutions</p>
               </div>
             </li>
           </ul>
@@ -273,7 +275,7 @@
       <!-- Team  -->
       <section class="section team">
         <div class="container">
-          <h2 class="section__title">Наша команда</h2>
+          <h2 class="section__title">Our Team</h2>
 
           <ul class="team__list">
             <li class="team__item">
@@ -344,7 +346,7 @@
                 <img
                   class="team__img"
                   src="./images/team/igor-270.jpg"
-                  alt="Игорь"
+                  alt="Ihor Dem'yanenko"
                   srcset="
                     ./images/team/igor-270.jpg 270w,
                     ./images/team/igor-354.jpg 354w,
@@ -358,7 +360,7 @@
               </picture>
 
               <div class="team__container">
-                <h3 class="team__title">Игорь Демьяненко</h3>
+                <h3 class="team__title">Ihor Dem'yanenko</h3>
                 <p class="team__position">Product Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -461,7 +463,7 @@
                 <img
                   class="team__img"
                   src="./images/team/olga-270.jpg"
-                  alt="Ольга"
+                  alt="Olha Ripa"
                   srcset="
                     ./images/team/olga-270.jpg 270w,
                     ./images/team/olga-354.jpg 354w,
@@ -475,7 +477,7 @@
               </picture>
 
               <div class="team__container">
-                <h3 class="team__title">Ольга Репина</h3>
+                <h3 class="team__title">Olha Ripa</h3>
                 <p class="team__position">Frontend developer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -577,7 +579,7 @@
                 <img
                   class="team__img"
                   src="./images/team/nikola-270.jpg"
-                  alt="Николай"
+                  alt="Mykola Tarasiuk"
                   srcset="
                     ./images/team/nikola-270.jpg 270w,
                     ./images/team/nikola-354.jpg 354w,
@@ -591,7 +593,7 @@
               </picture>
 
               <div class="team__container">
-                <h3 class="team__title">Николай Тарасов</h3>
+                <h3 class="team__title">Mykola Tarasiuk</h3>
                 <p class="team__position">Marketing</p>
                 <ul class="social">
                   <li class="social__item">
@@ -693,7 +695,7 @@
                 <img
                   class="team__img"
                   src="./images/team/mike-270.jpg"
-                  alt="Михаил"
+                  alt="Mykhailo Hayduk"
                   srcset="
                     ./images/team/mike-270.jpg 270w,
                     ./images/team/mike-354.jpg 354w,
@@ -707,7 +709,7 @@
               </picture>
 
               <div class="team__container">
-                <h3 class="team__title">Михаил Ермаков</h3>
+                <h3 class="team__title">Mykhailo Hayduk</h3>
                 <p class="team__position">UI Designer</p>
                 <ul class="social">
                   <li class="social__item">
@@ -748,7 +750,7 @@
       <!-- Partners -->
       <section class="section partners">
         <div class="container">
-          <h2 class="section__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Our Partners</h2>
 
           <ul class="partners__list">
             <li class="partners__items">
