@@ -1,67 +1,13 @@
 <section class="section feedback" id="feedback">
   <div class="container">
     <div class="map">
-      <!-- Thumb -->
-      <div class="map__thumb"></div>
       <!-- Form -->
       <div class="map__form">
-        <form class="order-form">
-          <label class="order-form__label">
-            <p class="order-form__title">Name</p>
-
-            <div class="order-form__box">
-              <input class="order-form__input" name="name" type="text" />
-              <!-- Input Icon -->
-              <svg class="order-form__input-icon">
-                <use href="./images/icons/sprites.svg#person"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="order-form__label">
-            <p class="order-form__title">Phone number</p>
-
-            <div class="order-form__box">
-              <input class="order-form__input" name="phone" type="tel" />
-              <!-- Input Icon -->
-              <svg class="order-form__input-icon">
-                <use href="./images/icons/sprites.svg#phone"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="order-form__label">
-            <p class="order-form__title">Email</p>
-
-            <div class="order-form__box">
-              <input class="order-form__input" name="email" type="email" />
-              <!-- Input Icon -->
-              <svg class="order-form__input-icon">
-                <use href="./images/icons/sprites.svg#email"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="order-form__textarea">
-            <p class="order-form__title">Commentary</p>
-
-            <textarea
-              class="order-form__comment"
-              name="comment"
-              rows="8"
-              placeholder="Write the message"
-            ></textarea>
-          </label>
-
-          <!-- Policy checkbox -->
-          <label class="order-form__policy">
-            <input class="order-form__checkbox" name="policy" type="checkbox" />
-            <span class="order-form__checkbox-icon"></span>
-            <p class="order-form__text">
-              I agree and accept
-              <a class="order-form__link" href="./">Terms of agreement</a>
-            </p>
-          </label>
-          <button class="button" type="submit">Send</button>
-        </form>
+        <!-- Form -->
+        <include src="./partials/order-form.html"></include>
       </div>
+      <!-- Thumb -->
+      <div class="map__thumb"></div>
     </div>
   </div>
 </section>
