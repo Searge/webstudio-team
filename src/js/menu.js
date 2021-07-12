@@ -1,3 +1,4 @@
+const bodyScrollLock = require('body-scroll-lock');
 // New Repeta's Script
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
@@ -9,9 +10,7 @@
     mobileMenu.classList.toggle('is-open');
     openMenuBtn.classList.toggle('is-open');
 
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
+    const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
@@ -28,10 +27,9 @@
 })();
 
 (() => {
-  const menuLink = document.querySelector('.menu__link')
-  menuLink.each(function () {
-    if (menuLink(this).attr('href') == window.location.pathname) {
-      menuLink(this).addClass('menu__link--current');
-    }
-  });
-});
+  const menuLink = document.querySelector('.menu__link');
+
+  if (menuLink.getAttribute('href') == window.location.pathname) {
+    menuLink.classList.toggle('menu__link--current');
+  }
+})();
