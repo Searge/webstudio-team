@@ -25,3 +25,9 @@
 
   font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - #{$mobile}) / (#{$desktopPure} - #{$mobilePure})));
 }
+
+@mixin responsive-menu-font($mobSize, $mobSizeS) {
+  $addSize: $mobSize - $mobSizeS;
+
+  font-size: calc(#{$mobSizeS + px} + #{$addSize} * ((100vw - #{$mobileS}) / (#{$mobilePure} - #{$mobilePureS})));
+}
