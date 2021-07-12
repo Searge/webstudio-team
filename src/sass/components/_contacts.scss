@@ -46,10 +46,8 @@
       display: flex;
       align-items: center;
 
-      @include respond-to-max($desktop) {
-        font-size: $minor-size;
-        line-height: 1.16;
-      }
+      font-size: $minor-size;
+      line-height: 1.16;
     }
 
     &__icon {
@@ -77,6 +75,9 @@
       align-items: center;
       padding-top: $hexadeca-gap_2x;
       padding-bottom: $hexadeca-gap_2x;
+
+      font-size: $main-size;
+      line-height: 1.14;
     }
   }
 }

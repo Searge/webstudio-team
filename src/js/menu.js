@@ -1,18 +1,16 @@
+const bodyScrollLock = require('body-scroll-lock');
 // New Repeta's Script
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
 
   const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
     openMenuBtn.classList.toggle('is-open');
 
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
+    const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
@@ -26,4 +24,12 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+})();
+
+(() => {
+  const menuLink = document.querySelector('.menu__link');
+
+  if (menuLink.getAttribute('href') == window.location.pathname) {
+    menuLink.classList.toggle('menu__link--current');
+  }
 })();
