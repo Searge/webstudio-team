@@ -27,9 +27,8 @@ const bodyScrollLock = require('body-scroll-lock');
 })();
 
 (() => {
-  const menuLink = document.querySelector('.menu__link');
-
-  if (menuLink.getAttribute('href') == window.location.href) {
-    menuLink.classList.toggle('menu__link--current');
-  }
+  const menuLinks = document.querySelectorAll('.menu__link')
+  menuLinks.forEach(
+    menuLink => (menuLink.getAttribute('href') == window.location.href) ? menuLink.classList.toggle('menu__link--current');
+  );
 })();
