@@ -4,10 +4,10 @@
   color: inherit;
   font-family: $logo-font;
   font-weight: 700;
-  font-size: $logo-mobile-size;
+
+  @include responsive-font($logo-size, $logo-mobile-size);
   line-height: 1.16;
   @include respond-from-min($desktop) {
-    font-size: $logo-size;
     line-height: 1.2;
   }
 

@@ -11,22 +11,21 @@
     margin-top: 0;
     margin-bottom: $pentadeca-gap_2x;
     color: $secondary-text;
-    font-weight: 700;
-    font-size: $section-title-mobile;
-    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.17;
+
+    @include responsive-font($section-title, $section-mobile-title);
 
     @include respond-from-min($desktop) {
       margin-bottom: $deca-gap_5x;
 
-      font-size: $quaternary-size;
       line-height: 1.14;
     }
   }
 
   &__navigate {
-
     margin-left: auto;
     margin-right: auto;
     width: 64px;
@@ -78,5 +77,4 @@
   @include respond-from-min($desktop) {
     max-width: $desktop;
   }
-
 }
