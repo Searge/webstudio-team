@@ -92,14 +92,13 @@
 
     color: $primary-text-inverted;
 
-    font-size: $hero-mobile-size;
     line-height: 1.61;
+    @include responsive-font($hero-size, $hero-mobile-size);
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     @include respond-from-min($desktop) {
-      font-size: $hero-size;
       line-height: 1.3;
     }
   }

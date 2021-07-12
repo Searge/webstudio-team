@@ -57,13 +57,14 @@
 
   &.is-open .contacts__item:last-child .contacts__link {
     color: $accent;
-    font-size: $mobile-menu-phone;
+
+    @include responsive-menu-font($mobile-menu-phone, $mobileS-menu-phone);
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
 
   &.is-open .contacts__item:not(:last-child) .contacts__link {
-    font-size: $mobile-menu-mail;
+    @include responsive-menu-font($mobile-menu-mail, $mobileS-menu-mail);
     line-height: 1.16;
     letter-spacing: 0.02em;
   }
@@ -85,7 +86,7 @@
 
   .menu-social__link {
     color: $accent;
-    font-size: $mobile-menu-social;
+    @include responsive-menu-font($mobile-menu-social, $mobileS-menu-social);
     line-height: 1.22;
     text-decoration: none;
   }
@@ -122,8 +123,8 @@
     text-decoration: none;
 
     font-weight: 500;
-    font-size: $mobile-menu;
     line-height: 1.17;
+    @include responsive-menu-font($mobile-menu, $mobileS-menu);
 
     @include respond-from-min($tablet) {
       position: relative;
@@ -134,6 +135,7 @@
       font-size: $main-size;
       line-height: 1.14;
     }
+
   }
 
   &__link--current,
