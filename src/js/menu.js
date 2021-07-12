@@ -4,8 +4,7 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
 
   const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
     openMenuBtn.classList.toggle('is-open');
@@ -27,3 +26,12 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+(() => {
+  const menuLink = document.querySelector('.menu__link')
+  menuLink.each(function () {
+    if (menuLink(this).attr('href') == window.location.pathname) {
+      menuLink(this).addClass('menu__link--current');
+    }
+  });
+});
