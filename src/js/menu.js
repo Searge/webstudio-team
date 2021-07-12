@@ -29,6 +29,6 @@ const bodyScrollLock = require('body-scroll-lock');
 (() => {
   const menuLinks = document.querySelectorAll('.menu__link')
   menuLinks.forEach(
-    menuLink => (menuLink.getAttribute('href') == window.location.href) ? menuLink.classList.toggle('menu__link--current');
+    menuLink => (menuLink.getAttribute('href') == window.location.href) ? menuLink.classList.toggle('menu__link--current') : continue;
   );
 })();
