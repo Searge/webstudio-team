@@ -3,7 +3,7 @@
 ![Created](https://img.shields.io/date/1625697644.svg?style=flat-square&logo=github)
 ![Repo size](https://img.shields.io/github/repo-size/Searge/webstudio-team?style=flat-square)
 ![Lines of code](https://img.shields.io/tokei/lines/github/searge/webstudio-team?style=flat-square&color=orange)
-![Deploy](https://github.com/Searge/webstudio-team/workflows/Build-n-deploy-2-gh-pages/badge.svg?branch=main)
+![Deploy](https://github.com/Searge/webstudio-team/workflows/Build-n-deploy-2-gh-pages/badge.svg?branch=main&style=flat-square)
 <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fsearge.github.io%2Fwebstudio-team%2F">
 ![w3c](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fsearge.github.io%2Fwebstudio-team%2F&style=flat-square)
 </a>
