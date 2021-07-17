@@ -21,25 +21,25 @@
           <!-- Filter -->
           <ul class="filter">
             <li class="filter__item">
-              <button class="button filter__btn filter__btn--active" type="button">All</button>
+              <button class="button filter__btn filter__btn--active" type="button" data-all>All</button>
             </li>
             <li class="filter__item">
-              <button class="button filter__btn" type="button">Web sites</button>
+              <button class="button filter__btn" type="button" data-site>Web sites</button>
             </li>
             <li class="filter__item">
-              <button class="button filter__btn" type="button">Applications</button>
+              <button class="button filter__btn" type="button" data-app>Applications</button>
             </li>
             <li class="filter__item">
-              <button class="button filter__btn" type="button">Design</button>
+              <button class="button filter__btn" type="button" data-design>Design</button>
             </li>
             <li class="filter__item">
-              <button class="button filter__btn" type="button">Marketing</button>
+              <button class="button filter__btn" type="button" data-mark>Marketing</button>
             </li>
           </ul>
 
           <!-- Projects -->
           <ul class="project">
-            <li class="project__item">
+            <li class="project__item" data-item-site>
               <a class="project__link" href="./">
                 <!-- First thumb: Start -->
                 <div class="thumb">
@@ -105,7 +105,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-design>
               <a class="project__link" href="./">
                 <div class="thumb">
                   <picture class="project__thumb">
@@ -169,7 +169,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-app>
               <a class="project__link" href="./">
                 <div class="thumb">
                   <picture class="project__thumb">
@@ -233,7 +233,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-mark>
               <div class="thumb">
                 <picture class="project__thumb">
                   <!-- Mobile -->
@@ -295,7 +295,7 @@
                 <p class="project__description">Marketing</p>
               </div>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-app>
               <a class="project__link" href="./">
                 <div class="thumb">
                   <picture class="project__thumb">
@@ -359,7 +359,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-site>
               <a class="project__link" href="./">
                 <div class="thumb">
                   <picture class="project__thumb">
@@ -423,7 +423,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-design>
               <a class="project__link" href="./">
                 <div class="thumb">
                   <picture class="project__thumb">
@@ -487,7 +487,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-mark>
               <a class="project__link" href="./">
                 <div class="thumb">
                   <picture class="project__thumb">
@@ -551,7 +551,7 @@
                 </div>
               </a>
             </li>
-            <li class="project__item">
+            <li class="project__item" data-item-app>
               <a class="project__link" href="./">
                 <div class="thumb">
                   <picture class="project__thumb">
@@ -625,6 +625,7 @@
 
     <!-- Scripts -->
     <script src="./js/menu.js"></script>
+    <script src="./js/filter.js" type="module"></script>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   </body>
 </html>
